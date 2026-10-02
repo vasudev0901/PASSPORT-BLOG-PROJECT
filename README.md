@@ -89,7 +89,3 @@ Open **http://localhost:3000** in your browser.
 | GET | `/` | Home page (requires login) |
 | GET | `/logout` | Log out and redirect to login |
 
-## Notes
-
-- The credentials are hardcoded for demo purposes. For a real application, use a database and hash passwords (e.g., with `bcrypt`).
-- Change the session secret (`blog-secret`) and store it in an environment variable before deploying.
