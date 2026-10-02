@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Login</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <div class="login-left">
+
+            <div class="brand">
+                <span>✦</span> BlogSpace
+            </div>
+
+            <h1>
+                Welcome <br>
+                <span>Back!</span>
+            </h1>
+
+            <p>
+                Login to continue reading and sharing
+                amazing stories with the world.
+            </p>
+
+            <div class="small-text">
+                ✨ Read. Write. Inspire.
+            </div>
+
+        </div>
+
+
+        <div class="login-card">
+
+            <h2>Login</h2>
+
+            <p class="login-subtitle">
+                Enter your account details
+            </p>
+
+
+            <% if (error) { %>
+
+                <div class="error-message">
+                    <%= error %>
+                </div>
+
+                <% } %>
+
+
+                    <form action="/login" method="POST">
+
+                        <div class="input-group">
+
+                            <label>Email Address</label>
+
+                            <input type="email" name="email" placeholder="Enter your email" required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Password</label>
+
+                            <input type="password" name="password" placeholder="Enter your password" required>
+
+                        </div>
+
+
+                        <button type="submit" class="login-btn">
+                            Login
+                            <span>→</span>
+                        </button>
+
+                    </form>
+
+
+                    <div class="demo-account">
+
+                        <p>Demo Account</p>
+
+                        <div>
+                            <strong>Email:</strong>
+                            admin@gmail.com
+                        </div>
+
+                        <div>
+                            <strong>Password:</strong>
+                            12345
+                        </div>
+
+                    </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
